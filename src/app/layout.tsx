@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'XPS Creative Landing Page',
+  title: 'XPS Creative',
   description:
     'Estratégia, criatividade e design para marcas que buscam o próximo nível.',
   icons: {
