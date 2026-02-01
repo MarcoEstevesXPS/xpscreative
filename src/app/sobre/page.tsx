@@ -144,9 +144,6 @@ export default function SobrePage() {
           <div className="relative z-10">
               <div className="text-left max-w-4xl mx-auto">
                   <h1 className="text-4xl md:text-5xl font-bold uppercase">Sobre a XPS Creative</h1>
-                  <p className="mt-4 max-w-2xl text-foreground/80 text-lg">
-                      Estratégia, criatividade e design para marcas que buscam o próximo nível.
-                  </p>
               </div>
               <div className="max-w-4xl mx-auto mt-12">
                   <div className="text-lg text-foreground/80 space-y-4">
