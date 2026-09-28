@@ -5,9 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { FaTiktok } from 'react-icons/fa';
-import { Instagram, Youtube, Menu } from 'lucide-react';
+import { Instagram, Youtube } from 'lucide-react';
 import { Logo } from '@/components/logo';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { SiteHeader } from '@/components/site-header';
 
 function ServiceCard({ title, description }: { title: string, description: string }) {
     return (
@@ -28,108 +28,7 @@ export default function SobrePage() {
 
   return (
     <div className="bg-white p-[24px] md:p-[47px] animate-in fade-in duration-1000 flex flex-col gap-[24px] md:gap-[47px]">
-       <header className="fixed top-[24px] md:top-[47px] left-0 right-0 z-20 w-full px-[24px] md:px-[47px]">
-        <div className="relative mx-auto max-w-7xl flex items-center">
-          <Logo className="text-[#41231A]" />
-          <div className="flex-1 flex justify-end md:justify-center">
-            <div className="flex items-center justify-between bg-[#41231A] text-white/80 rounded-full px-4 h-14 w-auto">
-              <nav className="hidden md:flex items-center gap-8 text-lg pl-8">
-                <Link
-                  href="/"
-                  className="hover:text-white transition-colors flex items-center gap-2"
-                >
-                  <Image src="/logomenu.png" alt="Logo Menu" width={24} height={24} />
-                  HOME
-                </Link>
-                <Link href="/servicos" className="hover:text-white transition-colors">
-                  SOLUÇÕES
-                </Link>
-                <Link href="/sobre" className="hover:text-white transition-colors text-white font-bold">
-                  SOBRE
-                </Link>
-              </nav>
-
-              <div className="hidden md:flex items-center gap-6 ml-4">
-                <div className="w-px h-6 bg-white/20"></div>
-                <div className="flex items-center gap-6">
-                  <Link href="https://www.instagram.com/xpscreative" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                    <Instagram className="h-5 w-5" />
-                  </Link>
-                </div>
-                <Button
-                  asChild
-                  variant="default"
-                  size="sm"
-                  className="rounded-full bg-white text-[#41231A] hover:bg-white/90 px-8"
-                >
-                  <Link href="mailto:marco@xpscreative.com">
-                    Contato
-                  </Link>
-                </Button>
-                <Button asChild variant="link" className="text-white hover:text-white/80 hover:no-underline">
-                  <Link href="https://clientexps.lovable.app/auth" target="_blank">
-                    Área do Cliente
-                  </Link>
-                </Button>
-              </div>
-
-              <div className="md:hidden flex items-center justify-between w-full">
-                <Sheet>
-                  <SheetTrigger asChild>
-                    <Button variant="ghost" size="icon" className="text-white hover:bg-transparent hover:text-white/80">
-                      <Menu className="h-6 w-6" />
-                    </Button>
-                  </SheetTrigger>
-                  <SheetContent side="left" className="bg-[#41231A] text-white border-none p-8">
-                    <SheetHeader>
-                      <SheetTitle className="sr-only">Menu</SheetTitle>
-                    </SheetHeader>
-                    <nav className="flex flex-col gap-8 text-2xl mt-8">
-                      <Link href="/" className="hover:text-white/80 transition-colors flex items-center gap-2">
-                        <Image src="/logomenu.png" alt="Logo Menu" width={24} height={24} />
-                        HOME
-                      </Link>
-                      <Link href="/servicos" className="hover:text-white/80 transition-colors">
-                        SOLUÇÕES
-                      </Link>
-                      <Link href="/sobre" className="hover:text-white/80 transition-colors">
-                        SOBRE
-                      </Link>
-                      <div className="pt-8 space-y-4">
-                        <Button asChild variant="link" className="text-white hover:text-white/80 hover:no-underline text-xl p-0 h-auto">
-                          <Link href="https://clientexps.lovable.app/auth" target="_blank">
-                            Área do Cliente
-                          </Link>
-                        </Button>
-                        <Button
-                          asChild
-                          variant="default"
-                          size="lg"
-                          className="rounded-full bg-white text-[#41231A] hover:bg-white/90 w-full"
-                        >
-                          <Link href="mailto:marco@xpscreative.com">
-                            Contato
-                          </Link>
-                        </Button>
-                        <div className="flex items-center gap-6 justify-center pt-4">
-                          <Link href="https://www.instagram.com/xpscreative" target="_blank" rel="noopener noreferrer" className="hover:text-white/80">
-                            <Instagram className="h-6 w-6" />
-                          </Link>
-                        </div>
-                      </div>
-                    </nav>
-                  </SheetContent>
-                </Sheet>
-                <Button asChild variant="link" className="text-white hover:text-white/80 hover:no-underline text-sm">
-                  <Link href="https://clientexps.lovable.app/auth" target="_blank">
-                    Área do Cliente
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <SiteHeader />
 
       <div className="relative bg-background text-foreground overflow-hidden rounded-[12px] mt-20 flex flex-col justify-center py-16 md:py-24 px-4 sm:px-6 lg:px-8">
           <Image
