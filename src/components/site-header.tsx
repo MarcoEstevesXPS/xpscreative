@@ -43,15 +43,15 @@ export function SiteHeader() {
         'fixed top-0 left-0 right-0 z-30 w-full px-[24px] md:px-[47px]',
         'transition-[padding,background-color,box-shadow] duration-300 motion-reduce:transition-none',
         scrolled
-          ? 'bg-white/90 backdrop-blur-md py-3 shadow-[0_1px_0_rgba(65,35,26,0.10)]'
+          ? 'bg-[#F7F5EE]/90 backdrop-blur-md py-3 shadow-[0_1px_0_rgba(68,41,62,0.10)]'
           : 'bg-transparent pt-[24px] md:pt-[47px] pb-3'
       )}
     >
       <div className="relative mx-auto max-w-7xl flex items-center">
-        <Logo className="text-[#41231A]" />
+        <Logo className="text-[#44293E]" />
 
         <div className="flex-1 flex justify-end md:justify-center">
-          <div className="flex items-center justify-between bg-[#41231A] text-white/80 rounded-full px-4 h-14 w-auto">
+          <div className="flex items-center justify-between bg-[#44293E] text-[#E1E1E3] rounded-full px-4 h-14 w-auto">
             {/* Desktop */}
             <nav className="hidden md:flex items-center gap-8 text-lg pl-8">
               {NAV_LINKS.map((link) => {
@@ -89,7 +89,7 @@ export function SiteHeader() {
               <Button
                 asChild
                 size="sm"
-                className="rounded-full bg-white text-[#41231A] hover:bg-white/90 px-8"
+                className="rounded-full bg-white text-[#44293E] hover:bg-white/90 px-8"
               >
                 <Link href={CONTACT_EMAIL}>Contato</Link>
               </Button>
@@ -117,7 +117,7 @@ export function SiteHeader() {
                     <Menu className="h-6 w-6" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="bg-[#41231A] text-white border-none p-8">
+                <SheetContent side="left" className="bg-[#44293E] text-white border-none p-8">
                   <SheetHeader>
                     <SheetTitle className="sr-only">Menu</SheetTitle>
                   </SheetHeader>
@@ -148,7 +148,7 @@ export function SiteHeader() {
                       <Button
                         asChild
                         size="lg"
-                        className="rounded-full bg-white text-[#41231A] hover:bg-white/90 w-full"
+                        className="rounded-full bg-white text-[#44293E] hover:bg-white/90 w-full"
                       >
                         <Link href={CONTACT_EMAIL}>Contato</Link>
                       </Button>
