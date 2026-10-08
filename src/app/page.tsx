@@ -26,11 +26,11 @@ function KPICard({ icon: Icon, title, description }: { icon: React.ElementType; 
           <div className="bg-primary/20 p-3 rounded-lg">
             <Icon className="h-6 w-6 text-primary" />
           </div>
-          <CardTitle className="text-base font-bold flex-1 leading-tight text-pretty">{title}</CardTitle>
+          <CardTitle className="text-base font-bold text-white flex-1 leading-tight text-pretty">{title}</CardTitle>
         </div>
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-card-foreground/80 text-pretty">{description}</p>
+        <p className="text-sm text-card-foreground text-pretty">{description}</p>
       </CardContent>
     </Card>
   );
@@ -40,10 +40,10 @@ function ServiceCard({ title, description }: { title: string, description: strin
   return (
       <div className="bg-[#F8F8F8] border border-gray-200 rounded-xl p-6 shadow-[0_0_20px_rgba(0,0,0,0.05)] flex gap-4 items-center hover:shadow-md transition-shadow cursor-pointer h-full">
           <div className="flex-1">
-              <h4 className="font-bold text-[#41231A] text-pretty">{title}</h4>
-              <p className="text-sm text-[#41231A]/80 text-pretty">{description}</p>
+              <h4 className="font-bold text-[#44293E] text-pretty">{title}</h4>
+              <p className="text-sm text-[#44293E]/80 text-pretty">{description}</p>
           </div>
-          <div className="bg-[#41231A] text-white text-xs font-bold px-3 py-1 rounded-md">
+          <div className="bg-[#44293E] text-white text-xs font-bold px-3 py-1 rounded-md">
               GRÁTIS
           </div>
       </div>
@@ -55,7 +55,7 @@ export default function HomePage() {
   const whatsappLink = "https://wa.me/5521998099718?text=Ol%C3%A1!%20%C3%89%20um%20prazer%20ter%20voc%C3%AA%20aqui.%0A%0APara%20que%20possamos%20dar%20continuidade%20%C3%A0%20sua%20experi%C3%AAncia%2C%20por%20favor%2C%20nos%20informe%3A%0A%0ASeu%20nome%2C%0A%0AE%20qual%20das%20nossas%20frentes%20voc%C3%AA%20deseja%20seguir%20na%20sua%20jornada%20conosco%20(Gerenciamento%20de%20Projetos%20ou%20Carreira%20Fonogr%C3%A1fica).%0A%0AResponderemos%20em%20breve%2C%20mas%20sinta-se%20%C3%A0%20vontade%20para%20adiantar%20o%20assunto%20ou%20a%20necessidade%20do%20seu%20projeto!%22";
 
   return (
-    <div className="bg-white p-[24px] md:p-[47px] animate-in fade-in duration-1000 flex flex-col gap-[24px] md:gap-[47px]">
+    <div className="bg-[#F7F5EE] p-[24px] md:p-[47px] animate-in fade-in duration-1000 flex flex-col gap-[24px] md:gap-[47px]">
       <SiteHeader />
 
       <div className="relative flex flex-col bg-background text-foreground overflow-hidden rounded-[12px] mt-20" style={{minHeight: '90vh'}}>
@@ -79,12 +79,12 @@ export default function HomePage() {
                   style={{ lineHeight: 1.1 }}
                 >
                   <span className="italic">Seus</span>{' '}
-                  <span className="font-bold">projetos artísticos</span>{' '}
+                  <span className="font-bold text-white">projetos artísticos</span>{' '}
                   <span className="italic">no centro da</span>{' '}
-                  <span className="font-bold">indústria criativa</span>
+                  <span className="font-bold text-white">indústria criativa</span>
                 </h1>
 
-                <div className="max-w-md text-foreground/80 space-y-4">
+                <div className="max-w-md text-foreground space-y-4">
                   <p className="text-pretty">
                   Criando alianças, gerando conexões. Unimos estratégia e gestão profissional para transformar talento em ativos sustentáveis, conectando criatividade e mercado com excelência técnica.
                   </p>
@@ -93,7 +93,7 @@ export default function HomePage() {
                 <Button
                   asChild
                   size="lg"
-                  className="rounded-full bg-foreground hover:bg-foreground/80 text-background px-6 py-7 text-base font-semibold"
+                  className="rounded-full bg-[#F1F0EF] hover:bg-[#F1F0EF]/80 text-background px-6 py-7 text-base font-semibold"
                 >
                   <Link href="https://wa.me/5521998099718?text=Ol%C3%A1!%20%C3%89%20um%20prazer%20ter%20voc%C3%AA%20aqui.%0A%0APara%20que%20possamos%20dar%20continuidade%20%C3%A0%20sua%20experi%C3%AAncia%2C%20por%20favor%2C%20nos%20informe%3A%0A%0ASeu%20nome%2C%0A%0AE%20qual%20das%20nossas%20frentes%20voc%C3%AA%20deseja%20seguir%20na%20sua%20jornada%20conosco%20(Gerenciamento%20de%20Projetos%20ou%20Carreira%20Fonogr%C3%A1fica).%0A%0AResponderemos%20em%20breve%2C%20mas%20sinta-se%20%C3%A0%20vontade%20para%20adiantar%20o%20assunto%20ou%20a%20necessidade%20do%20seu%20projeto!%22" target="_blank">
                     <div className="flex items-center gap-3">
@@ -124,18 +124,18 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
                 <div className="flex-shrink-0">
-                    <Logo className="text-[#41231A]" />
+                    <Logo className="text-[#44293E]" />
                 </div>
                 <div className="hidden md:block w-px h-10 bg-gray-300"></div>
-                <h2 className="text-xl md:text-2xl font-bold text-[#41231A] max-w-md text-pretty">
+                <h2 className="text-xl md:text-2xl font-bold text-[#44293E] max-w-md text-pretty">
                 Nossas soluções
                 </h2>
             </div>
         </div>
 
-        <div className="container mx-auto max-w-6xl rounded-2xl bg-[#41231A] px-4 py-16 sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-6xl rounded-2xl bg-[#44293E] px-4 py-16 sm:px-6 lg:px-8">
             <h3 className="mb-12 text-center text-3xl font-light text-foreground text-pretty">
-                GERENCIAMENTO DE <span className="font-bold">PROJETOS</span>
+                GERENCIAMENTO DE <span className="font-bold text-white">PROJETOS</span>
             </h3>
             <div className="grid gap-8 md:grid-cols-3">
                 <KPICard 
@@ -155,15 +155,15 @@ export default function HomePage() {
                 />
             </div>
             <div className="mt-12 text-center">
-                <Button asChild variant="link" className="text-lg font-bold text-foreground no-underline hover:underline hover:text-foreground/80">
+                <Button asChild variant="link" className="text-lg font-bold text-white no-underline hover:underline hover:text-white/80">
                     <Link href="/servicos">SAIBA MAIS</Link>
                 </Button>
             </div>
         </div>
 
-        <div className="container mx-auto max-w-6xl rounded-2xl bg-[#41231A] px-4 py-16 sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-6xl rounded-2xl bg-[#44293E] px-4 py-16 sm:px-6 lg:px-8">
             <h3 className="mb-12 text-center text-3xl font-light text-foreground text-pretty">
-                SELO, EDITORA & <span className="font-bold">PRODUTORA</span>
+                SELO, EDITORA & <span className="font-bold text-white">PRODUTORA</span>
             </h3>
             <div className="grid gap-8 md:grid-cols-3">
                     <KPICard 
@@ -183,7 +183,7 @@ export default function HomePage() {
                 />
             </div>
             <div className="mt-12 text-center">
-                    <Button asChild variant="link" className="text-lg font-bold text-foreground no-underline hover:underline hover:text-foreground/80">
+                    <Button asChild variant="link" className="text-lg font-bold text-white no-underline hover:underline hover:text-white/80">
                     <Link href="/servicos">SAIBA MAIS</Link>
                 </Button>
             </div>
@@ -191,9 +191,9 @@ export default function HomePage() {
 
       </div>
       <div className="py-16 md:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#41231A]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#44293E]">
             <h2 className="text-3xl md:text-4xl font-light text-pretty">Está perdido no próximo passo? <span className="font-bold">Comece aqui.</span></h2>
-            <p className="mt-4 max-w-xl mx-auto text-lg text-[#41231A]/80 text-pretty">
+            <p className="mt-4 max-w-xl mx-auto text-lg text-[#44293E]/80 text-pretty">
                 Clareza imediata sobre sua carreira ou projeto musical. Zero enrolação, zero compromisso.
             </p>
             <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -211,7 +211,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-8">
-                <p className="text-sm font-semibold tracking-wider text-[#41231A]/60 bg-gray-100/80 inline-block px-4 py-2 rounded-full text-pretty">
+                <p className="text-sm font-semibold tracking-wider text-[#44293E]/60 bg-gray-100/80 inline-block px-4 py-2 rounded-full text-pretty">
                     SESSÕES GRATUITAS, ZERO PRESSÃO — SÓ PRA VOCÊ AVANÇAR MAIS RÁPIDO.
                 </p>
             </div>
@@ -219,13 +219,13 @@ export default function HomePage() {
       </div>
         <footer className="py-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-8">
-                <Logo className="text-[#41231A]" />
-                <div className="flex items-center gap-8 text-[#41231A]">
-                    <Link href="https://www.instagram.com/xpscreative?igsh=MXM3cm5vZnVsOHly&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-[#41231A]/70">
+                <Logo className="text-[#44293E]" />
+                <div className="flex items-center gap-8 text-[#44293E]">
+                    <Link href="https://www.instagram.com/xpscreative?igsh=MXM3cm5vZnVsOHly&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-[#44293E]/70">
                         <Instagram className="h-5 w-5" />
                     </Link>
                 </div>
-                <p className="text-sm text-[#41231A]/60">
+                <p className="text-sm text-[#44293E]/60">
                     © {new Date().getFullYear()} xps creative
                 </p>
             </div>

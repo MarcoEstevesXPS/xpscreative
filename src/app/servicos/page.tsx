@@ -17,10 +17,10 @@ function ServiceCard({ title, description }: { title: string, description: strin
   return (
       <div className="bg-[#F8F8F8] border border-gray-200 rounded-xl p-6 shadow-[0_0_20px_rgba(0,0,0,0.05)] flex gap-4 items-center hover:shadow-md transition-shadow cursor-pointer h-full">
           <div className="flex-1">
-              <h4 className="font-bold text-[#41231A] text-pretty">{title}</h4>
-              <p className="text-sm text-[#41231A]/80 text-pretty">{description}</p>
+              <h4 className="font-bold text-[#44293E] text-pretty">{title}</h4>
+              <p className="text-sm text-[#44293E]/80 text-pretty">{description}</p>
           </div>
-          <div className="bg-[#41231A] text-white text-xs font-bold px-3 py-1 rounded-md">
+          <div className="bg-[#44293E] text-white text-xs font-bold px-3 py-1 rounded-md">
               GRÁTIS
           </div>
       </div>
@@ -75,7 +75,7 @@ export default function ServicosPage() {
   const [activeService, setActiveService] = React.useState<(typeof services)[0] | null>(null);
 
   return (
-    <div className="bg-white p-[24px] md:p-[47px] animate-in fade-in duration-1000 flex flex-col gap-[24px] md:gap-[47px]">
+    <div className="bg-[#F7F5EE] p-[24px] md:p-[47px] animate-in fade-in duration-1000 flex flex-col gap-[24px] md:gap-[47px]">
       <SiteHeader />
 
       <div className="grid md:grid-cols-2 gap-2 mt-20">
@@ -96,7 +96,7 @@ export default function ServicosPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
             <div className="relative z-10 text-left space-y-6 max-w-sm w-full">
-              <h2 className="text-3xl md:text-4xl font-bold uppercase text-pretty">
+              <h2 className="text-3xl md:text-4xl font-bold text-white uppercase text-pretty">
                 {service.titleLines[0]}<br/>{service.titleLines[1]}
               </h2>
               <div className="flex flex-col gap-4">
@@ -113,7 +113,7 @@ export default function ServicosPage() {
                     contato
                   </Link>
                 </Button>
-                <Button variant="outline" size="icon" className="rounded-full bg-foreground text-background" asChild>
+                <Button variant="outline" size="icon" className="rounded-full bg-[#F1F0EF] text-background" asChild>
                   <Link href={whatsappLink} target="_blank" onClick={(e) => e.stopPropagation()}>
                     <FaWhatsapp className="h-5 w-5" />
                   </Link>
@@ -139,20 +139,20 @@ export default function ServicosPage() {
           {activeService && (
             <div className="flex flex-col max-h-[90vh]">
               <DialogHeader className="p-6 flex-shrink-0">
-                <DialogTitle className="text-2xl font-bold text-card-foreground text-left text-pretty">{activeService.title}</DialogTitle>
+                <DialogTitle className="text-2xl font-bold text-white text-left text-pretty">{activeService.title}</DialogTitle>
               </DialogHeader>
               <ScrollArea className="flex-1 px-6 pb-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                   {activeService.items.map((item, index) => (
                     <Card key={index} className="bg-background/40 text-card-foreground shadow-md border-border">
                       <CardHeader>
-                        <CardTitle className="text-base font-bold flex items-center gap-3">
+                        <CardTitle className="text-base font-bold text-white flex items-center gap-3">
                            <item.icon className="h-6 w-6 flex-shrink-0" />
                            <span className="text-pretty">{item.title}</span>
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-sm text-card-foreground/80 text-pretty">{item.description}</p>
+                        <p className="text-sm text-card-foreground text-pretty">{item.description}</p>
                       </CardContent>
                     </Card>
                   ))}
@@ -164,9 +164,9 @@ export default function ServicosPage() {
       </Dialog>
 
       <div className="py-16 md:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#41231A]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#44293E]">
             <h2 className="text-3xl md:text-4xl font-light text-pretty">Está perdido no próximo passo? <span className="font-bold">Comece aqui.</span></h2>
-            <p className="mt-4 max-w-xl mx-auto text-lg text-[#41231A]/80 text-pretty">
+            <p className="mt-4 max-w-xl mx-auto text-lg text-[#44293E]/80 text-pretty">
                 Clareza imediata sobre sua carreira ou projeto musical. Zero enrolação, zero compromisso.
             </p>
             <div className="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -184,7 +184,7 @@ export default function ServicosPage() {
               </Link>
             </div>
             <div className="mt-8">
-                <p className="text-sm font-semibold tracking-wider text-[#41231A]/60 bg-gray-100/80 inline-block px-4 py-2 rounded-full text-pretty">
+                <p className="text-sm font-semibold tracking-wider text-[#44293E]/60 bg-gray-100/80 inline-block px-4 py-2 rounded-full text-pretty">
                     SESSÕES GRATUITAS, ZERO PRESSÃO — SÓ PRA VOCÊ AVANÇAR MAIS RÁPIDO.
                 </p>
             </div>
@@ -193,13 +193,13 @@ export default function ServicosPage() {
 
       <footer className="py-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-8">
-                <Logo className="text-[#41231A]" />
-                <div className="flex items-center gap-8 text-[#41231A]">
-                    <Link href="https://www.instagram.com/xpscreative" target="_blank" rel="noopener noreferrer" className="hover:text-[#41231A]/70">
+                <Logo className="text-[#44293E]" />
+                <div className="flex items-center gap-8 text-[#44293E]">
+                    <Link href="https://www.instagram.com/xpscreative" target="_blank" rel="noopener noreferrer" className="hover:text-[#44293E]/70">
                         <Instagram className="h-5 w-5" />
                     </Link>
                 </div>
-                <p className="text-sm text-[#41231A]/60">
+                <p className="text-sm text-[#44293E]/60">
                     © {new Date().getFullYear()} xps creative
                 </p>
             </div>
