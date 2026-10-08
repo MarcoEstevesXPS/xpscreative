@@ -8,6 +8,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { Instagram, Layers, Wrench, Shield, Library, Compass, Gem } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { SiteHeader } from '@/components/site-header';
+import { HeroVideo } from '@/components/hero-video';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 function Blob() {
@@ -59,15 +60,7 @@ export default function HomePage() {
       <SiteHeader />
 
       <div className="relative flex flex-col bg-background text-foreground overflow-hidden rounded-[12px] mt-20" style={{minHeight: '90vh'}}>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute z-0 w-full h-full object-cover opacity-50"
-        >
-          <source src="https://firebasestorage.googleapis.com/v0/b/xps-creative.firebasestorage.app/o/bg%20xps.mp4?alt=media&token=7d8b5443-6610-4884-9e7e-f40745eb393e" type="video/mp4" />
-        </video>
+        <HeroVideo />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent" />
 
         <div className="relative flex flex-1 flex-col">
