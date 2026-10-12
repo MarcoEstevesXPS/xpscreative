@@ -44,7 +44,7 @@ function ServiceCard({ title, description }: { title: string, description: strin
               <h4 className="font-bold text-[#44293E] text-pretty">{title}</h4>
               <p className="text-sm text-[#44293E]/80 text-pretty">{description}</p>
           </div>
-          <div className="bg-[#44293E] text-white text-xs font-bold px-3 py-1 rounded-md">
+          <div className="bg-primary text-[#44293E] text-xs font-bold px-3 py-1 rounded-md">
               GRÁTIS
           </div>
       </div>
@@ -86,7 +86,7 @@ export default function HomePage() {
                 <Button
                   asChild
                   size="lg"
-                  className="rounded-full bg-[#F1F0EF] hover:bg-[#F1F0EF]/80 text-background px-6 py-7 text-base font-semibold"
+                  className="rounded-full bg-primary hover:bg-primary/85 text-background px-6 py-7 text-base font-bold"
                 >
                   <Link href="https://wa.me/5521998099718?text=Ol%C3%A1!%20%C3%89%20um%20prazer%20ter%20voc%C3%AA%20aqui.%0A%0APara%20que%20possamos%20dar%20continuidade%20%C3%A0%20sua%20experi%C3%AAncia%2C%20por%20favor%2C%20nos%20informe%3A%0A%0ASeu%20nome%2C%0A%0AE%20qual%20das%20nossas%20frentes%20voc%C3%AA%20deseja%20seguir%20na%20sua%20jornada%20conosco%20(Gerenciamento%20de%20Projetos%20ou%20Carreira%20Fonogr%C3%A1fica).%0A%0AResponderemos%20em%20breve%2C%20mas%20sinta-se%20%C3%A0%20vontade%20para%20adiantar%20o%20assunto%20ou%20a%20necessidade%20do%20seu%20projeto!%22" target="_blank">
                     <div className="flex items-center gap-3">
@@ -126,7 +126,7 @@ export default function HomePage() {
             </div>
         </div>
 
-        <div className="container mx-auto max-w-6xl rounded-2xl bg-[#44293E] px-4 py-16 sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-6xl rounded-2xl bg-[#44293E] border-t-[6px] border-primary px-4 py-16 sm:px-6 lg:px-8">
             <h3 className="mb-12 text-center text-3xl font-light text-foreground text-pretty">
                 GERENCIAMENTO DE <span className="font-bold text-white">PROJETOS</span>
             </h3>
@@ -148,13 +148,13 @@ export default function HomePage() {
                 />
             </div>
             <div className="mt-12 text-center">
-                <Button asChild variant="link" className="text-lg font-bold text-white no-underline hover:underline hover:text-white/80">
+                <Button asChild variant="link" className="text-lg font-bold tracking-wider text-primary no-underline hover:underline hover:text-primary/80">
                     <Link href="/servicos">SAIBA MAIS</Link>
                 </Button>
             </div>
         </div>
 
-        <div className="container mx-auto max-w-6xl rounded-2xl bg-[#44293E] px-4 py-16 sm:px-6 lg:px-8">
+        <div className="container mx-auto max-w-6xl rounded-2xl bg-[#44293E] border-t-[6px] border-primary px-4 py-16 sm:px-6 lg:px-8">
             <h3 className="mb-12 text-center text-3xl font-light text-foreground text-pretty">
                 SELO, EDITORA & <span className="font-bold text-white">PRODUTORA</span>
             </h3>
@@ -176,7 +176,7 @@ export default function HomePage() {
                 />
             </div>
             <div className="mt-12 text-center">
-                    <Button asChild variant="link" className="text-lg font-bold text-white no-underline hover:underline hover:text-white/80">
+                    <Button asChild variant="link" className="text-lg font-bold tracking-wider text-primary no-underline hover:underline hover:text-primary/80">
                     <Link href="/servicos">SAIBA MAIS</Link>
                 </Button>
             </div>
@@ -185,7 +185,7 @@ export default function HomePage() {
       </div>
       <div className="py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#44293E]">
-            <h2 className="text-3xl md:text-4xl font-light text-pretty">Está perdido no próximo passo? <span className="font-bold">Comece aqui.</span></h2>
+            <h2 className="text-3xl md:text-4xl font-light text-pretty">Está perdido no próximo passo? <span className="font-bold bg-primary px-3 rounded-lg [box-decoration-break:clone]">Comece aqui.</span></h2>
             <p className="mt-4 max-w-xl mx-auto text-lg text-[#44293E]/80 text-pretty">
                 Clareza imediata sobre sua carreira ou projeto musical. Zero enrolação, zero compromisso.
             </p>
@@ -204,7 +204,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-8">
-                <p className="text-sm font-semibold tracking-wider text-[#44293E]/60 bg-gray-100/80 inline-block px-4 py-2 rounded-full text-pretty">
+                <p className="text-sm font-semibold tracking-wider text-[#44293E] bg-primary/25 inline-block px-4 py-2 rounded-full text-pretty">
                     SESSÕES GRATUITAS, ZERO PRESSÃO — SÓ PRA VOCÊ AVANÇAR MAIS RÁPIDO.
                 </p>
             </div>

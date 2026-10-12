@@ -16,7 +16,7 @@ function ServiceCard({ title, description }: { title: string, description: strin
                 <h4 className="font-bold text-[#44293E]">{title}</h4>
                 <p className="text-sm text-[#44293E]/80">{description}</p>
             </div>
-            <div className="bg-[#44293E] text-white text-xs font-bold px-3 py-1 rounded-md">
+            <div className="bg-primary text-[#44293E] text-xs font-bold px-3 py-1 rounded-md">
                 GRÁTIS
             </div>
         </div>
@@ -93,7 +93,7 @@ export default function SobrePage() {
 
       <div className="py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#44293E]">
-            <h2 className="text-3xl md:text-4xl font-light">Está perdido no próximo passo? <span className="font-bold">Comece aqui.</span></h2>
+            <h2 className="text-3xl md:text-4xl font-light">Está perdido no próximo passo? <span className="font-bold bg-primary px-3 rounded-lg [box-decoration-break:clone]">Comece aqui.</span></h2>
             <p className="mt-4 max-w-xl mx-auto text-lg">
                 Clareza imediata sobre sua carreira ou projeto musical. Zero enrolação, zero compromisso.
             </p>
@@ -112,7 +112,7 @@ export default function SobrePage() {
               </Link>
             </div>
             <div className="mt-8">
-                <p className="text-sm font-semibold tracking-wider text-[#44293E]/60 bg-gray-100/80 inline-block px-4 py-2 rounded-full">
+                <p className="text-sm font-semibold tracking-wider text-[#44293E] bg-primary/25 inline-block px-4 py-2 rounded-full">
                     SESSÕES GRATUITAS, ZERO PRESSÃO — SÓ PRA VOCÊ AVANÇAR MAIS RÁPIDO.
                 </p>
             </div>
