@@ -63,7 +63,7 @@ export function SiteHeader() {
                     aria-current={active ? 'page' : undefined}
                     className={cn(
                       'hover:text-white transition-colors flex items-center gap-2',
-                      active && 'text-white font-bold'
+                      active && 'text-white font-bold underline decoration-primary decoration-[3px] underline-offset-8'
                     )}
                   >
                     {link.withIcon && (
@@ -89,7 +89,7 @@ export function SiteHeader() {
               <Button
                 asChild
                 size="sm"
-                className="rounded-full bg-white text-[#44293E] hover:bg-white/90 px-8"
+                className="rounded-full bg-primary text-[#44293E] font-bold hover:bg-primary/85 px-8"
               >
                 <Link href={CONTACT_EMAIL}>Contato</Link>
               </Button>
@@ -148,7 +148,7 @@ export function SiteHeader() {
                       <Button
                         asChild
                         size="lg"
-                        className="rounded-full bg-white text-[#44293E] hover:bg-white/90 w-full"
+                        className="rounded-full bg-primary text-[#44293E] font-bold hover:bg-primary/85 w-full"
                       >
                         <Link href={CONTACT_EMAIL}>Contato</Link>
                       </Button>
