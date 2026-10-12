@@ -62,3 +62,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Vídeo de fundo do hero: esconde o botão de play nativo do iOS/iPadOS
+   quando o aparelho bloqueia o autoplay (o pôster aparece no lugar). */
+.hero-video::-webkit-media-controls,
+.hero-video::-webkit-media-controls-panel,
+.hero-video::-webkit-media-controls-play-button,
+.hero-video::-webkit-media-controls-start-playback-button,
+.hero-video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+  opacity: 0 !important;
+}
